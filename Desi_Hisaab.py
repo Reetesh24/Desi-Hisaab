@@ -12,7 +12,7 @@ if "extra_count" not in st.session_state:
     st.session_state.extra_count = 0
 if "add_more" not in st.session_state:
     st.session_state.add_more = True
-
+st.title("Desi Hisaab")
 person = st.number_input("How many person are there in this bill?",step=1, format='%d', placeholder= 'like, 1,2,3,4,....')
 size  = st.number_input("How many places or  you done (in number)",step=1, format='%d', placeholder= 'like, 1,2,3,4,....')
 for i in range(int(size)):
