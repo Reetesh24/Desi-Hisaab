@@ -13,7 +13,7 @@ if "extra_count" not in st.session_state:
 if "add_more" not in st.session_state:
     st.session_state.add_more = True
 
-st.title("Desi Hisaab")
+st.title(":orange[Desi Hisaab]")
 
 person = st.number_input("How many persons?",step=1, format='%d', placeholder= 'like, 1,2,3,4,....')
 size  = st.number_input("How many places you spend?",step=1, format='%d', placeholder= 'like, 1,2,3,4,....')
