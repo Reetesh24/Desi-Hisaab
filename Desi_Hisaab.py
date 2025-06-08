@@ -47,4 +47,4 @@ if st.button('Finish and Split Bill'):
         with st.spinner("Please Wait"):
             time.sleep(3)
         st.write(f"Your Total Amount: Rs. {st.session_state.sum}")
-        st.write(f'The Splitted bill is here: Rs. {div}/- Per Head')
+        st.write(f'The Splitted bill is here: Rs. {div: .2f}/- Per Head')
