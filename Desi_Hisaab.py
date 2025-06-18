@@ -25,7 +25,7 @@ for i in range(int(size)):
 st.write("---")
 
 if st.session_state.add_more:
-    with st.form(key = "add_more_item"):
+    with st.form(clear_on_submit=True, key = "add_more_item"):
         key = st.text_input("Name of the product", placeholder= 'Samsoa, Maggie, Coke, ...', key=f'new_item_{st.session_state.extra_count}')
         value = st.number_input("Enter Price of the product Rs.",step=1, format= "%d", placeholder=' Rs. 12,40,50', key= f'new_amount_{st.session_state.extra_count}')
         submitted = st.form_submit_button("Add Item")
